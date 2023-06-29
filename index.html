@@ -78,17 +78,27 @@
       </div>
     </nav>
 
-    <div class="container d-block d-lg-flex" id="hero-item-container">
+    <div class="container-fluid d-block d-lg-flex" id="hero-item-container">
       <img
         src="images/developer.png"
         alt="computer and mobile application"
-        class="img-fluid"
+        class="img-fluid mx-auto my-auto d-block d-lg-flex rounded-5"
         id="hero-image"
       />
 
-      <div class="d-flex" id="hero-item">
-        <h1>Casey <span id="last-name">Baker</span></h1>
-        <h2>I am a Front-End Developer based in Vancouver, WA</h2>
+      <div
+        class="d-flex mx-auto my-auto text-center text-lg-start"
+        id="hero-item"
+      >
+        <h1 class="text-wrap text-lg-nowrap">
+          Casey <span id="last-name">Baker</span>
+        </h1>
+        <h2 class="text-wrap text-lg-nowrap">
+          I am a Front-End Developer based in Vancouver, WA
+        </h2>
+        <button type="button" class="btn btn-outline-light">
+          <i class="fa-solid fa-angles-down" style="color: #01aaaa"></i>
+        </button>
       </div>
     </div>
   </body>

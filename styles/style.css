@@ -21,22 +21,17 @@ h2 {
 }
 
 #hero-item-container {
-  justify-content: center;
-  align-items: center;
-  margin-top: 200px;
-  gap: 100px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  gap: 0px;
 }
 
 #hero-item {
   flex-direction: column;
-  white-space: nowrap;
 }
 #last-name {
   color: var(--primary-color);
 }
 #hero-image {
-  position: relative;
-  margin-left: 0;
-  max-width: 600px;
-  border-radius: 120px;
+  width: 40%;
 }
