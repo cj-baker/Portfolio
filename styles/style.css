@@ -1,5 +1,9 @@
 :root {
-  --primary-color: rgba(1, 170, 170);
+  --primary-color: #ffffff;
+  --secondary-color: rgba(1, 170, 170);
+  --primary-bg-color: #000000;
+  --secondary-bg-color: rgba(0, 0, 0, 0.8);
+  --content-box-color: rgba(0, 0, 0, 0.88);
 }
 
 body {
@@ -17,20 +21,22 @@ h2 {
 }
 h1,
 h2 {
-  color: white;
+  color: var(--primary-color);
 }
 
+.active {
+  color: var(--secondary-color) !important;
+}
 #hero-item-container {
   margin-top: 10%;
   margin-bottom: 10%;
-  gap: 0px;
 }
 
 #hero-item {
   flex-direction: column;
 }
 #last-name {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 #hero-image {
   width: 40%;
