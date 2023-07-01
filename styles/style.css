@@ -1,32 +1,37 @@
 :root {
   --primary-color: #ffffff;
   --secondary-color: rgba(1, 170, 170);
-  --primary-bg-color: #000000;
-  --secondary-bg-color: rgba(0, 0, 0, 0.8);
+  --hero-bg-color: #000000;
+  --primary-bg-color: rgba(0, 0, 0, 0.8);
   --content-box-color: rgba(0, 0, 0, 0.88);
 }
 
 body {
-  background-color: black;
   font-family: "Open Sans", sans-serif;
 }
 
 h1 {
   font-weight: 800;
   font-size: 72px;
+  color: var(--secondary-color);
 }
 h2 {
   font-size: 24px;
   font-weight: 300;
-}
-h1,
-h2 {
   color: var(--primary-color);
 }
 
 .active {
   color: var(--secondary-color) !important;
 }
+.hero {
+  background-color: var(--hero-bg-color);
+  padding-bottom: 5%;
+}
+.homepage {
+  background-color: var(--primary-bg-color);
+}
+
 #hero-item-container {
   margin-top: 10%;
   margin-bottom: 10%;
@@ -35,9 +40,12 @@ h2 {
 #hero-item {
   flex-direction: column;
 }
-#last-name {
-  color: var(--secondary-color);
+#first-name {
+  color: var(--primary-color);
 }
 #hero-image {
   width: 40%;
+}
+#hero-button {
+  width: 100%;
 }

@@ -32,74 +32,170 @@
     <title>Casey Baker | Front-End Developer based in Vancouver, WA</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="#" id="nav-icon">CB</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <ul class="nav nav-underline">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-light active"
-                  aria-current="page"
-                  href="#"
-                  id="home-link"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contact</a>
-              </li>
-            </ul>
+    <div class="hero">
+      <nav
+        class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand ms-3" href="#" id="nav-icon">CB</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <ul class="nav nav-underline">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-light active"
+                    aria-current="page"
+                    href="#"
+                    id="home-link"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </nav>
+
+      <div class="container-fluid d-block d-lg-flex" id="hero-item-container">
+        <img
+          src="images/developer.png"
+          alt="computer and mobile application"
+          class="img-fluid mx-auto my-auto d-block d-lg-flex rounded-5"
+          id="hero-image"
+        />
+
+        <div
+          class="d-flex mx-auto my-auto text-center text-lg-start"
+          id="hero-item"
+        >
+          <h1 class="text-wrap text-lg-nowrap">
+            <span id="first-name"> Casey</span> Baker
+          </h1>
+          <h2 class="text-wrap text-lg-nowrap">
+            I am a Front-End Developer based in Vancouver, WA
+          </h2>
+          <a href="#homepage" id="hero-button-link">
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              id="hero-button"
+            >
+              <i
+                class="fa-solid fa-angles-down"
+                style="color: #01aaaa"
+              ></i></button
+          ></a>
+        </div>
       </div>
-    </nav>
-
-    <div class="container-fluid d-block d-lg-flex" id="hero-item-container">
-      <img
-        src="images/developer.png"
-        alt="computer and mobile application"
-        class="img-fluid mx-auto my-auto d-block d-lg-flex rounded-5"
-        id="hero-image"
-      />
-
-      <div
-        class="d-flex mx-auto my-auto text-center text-lg-start"
-        id="hero-item"
-      >
-        <h1 class="text-wrap text-lg-nowrap">
-          Casey <span id="last-name">Baker</span>
-        </h1>
-        <h2 class="text-wrap text-lg-nowrap">
-          I am a Front-End Developer based in Vancouver, WA
-        </h2>
-        <button type="button" class="btn btn-outline-light">
-          <i class="fa-solid fa-angles-down" style="color: #01aaaa"></i>
-        </button>
+    </div>
+    <div class="homepage" id="homepage">
+      <h1>Recent Projects</h1>
+      <div class="container-md container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-fluid-6 col-md-6">
+            <img
+              src="/images/archery.png"
+              alt="Screenshot of Archery webpage"
+              title="Screenshot of Archery webpage"
+              class="img-fluid rounded d-none d-md-block d-none d-md-block"
+            />
+          </div>
+          <div class="col-fluid-6 col-md-6">
+            <h2 class="mb-3">Archery Page</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="mt-5">
+              <a
+                href="#"
+                class="primary-link project-link"
+                title="Learn more about the History of Archery"
+                >Launch Webpage</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-fluid-6 col-md-6">
+            <h2 class="mb-3">Weather App</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="mt-5 mb-5 mb-md-0">
+              <a
+                href="https://weatherapplicationproject.netlify.app"
+                class="primary-link project-link"
+                title="Launch the Weather App"
+                >Launch Weather App</a
+              >
+            </div>
+          </div>
+          <div class="col-fluid-6 col-md-6">
+            <img
+              src="/images/weather.png"
+              alt="Screenshot of Weather App"
+              title="Screenshot of Weather App"
+              class="img-fluid rounded d-none d-md-block"
+            />
+          </div>
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col-fluid-6 col-md-6">
+            <img
+              src="/images/worldclock.png"
+              alt="Screenshot of World Clock App"
+              title="Screenshot of World Clock App"
+              class="img-fluid rounded d-none d-md-block"
+            />
+          </div>
+          <div class="col-fluid-6 col-md-6">
+            <h2 class="mb-3">World Clock</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <div class="mt-5 mb-5 mb-md-0">
+              <a
+                href="https://worldclock-js-project.netlify.app"
+                class="primary-link project-link"
+                title="Try out my world clock app!"
+                >Launch App</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
