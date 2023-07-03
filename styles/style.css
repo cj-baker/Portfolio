@@ -113,8 +113,8 @@ p {
 }
 
 #hero-item-container {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  padding-top: 20%;
+  padding-bottom: 10%;
 }
 
 #hero-item {
