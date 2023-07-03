@@ -2,21 +2,61 @@
   --primary-color: #ffffff;
   --secondary-color: rgba(1, 170, 170);
   --hero-bg-color: #000000;
-  --primary-bg-color: rgba(0, 0, 0, 0.8);
-  --content-box-color: rgba(0, 0, 0, 0.88);
+  --primary-bg-color: rgb(51, 51, 51);
+  --content-box-color: rgb(31, 31, 31);
+  --primary-bottom-border: linear-gradient(
+    to right,
+    var(--primary-bg-color) 0%,
+    var(--primary-bg-color) 47%,
+    var(--secondary-color) 47%,
+    var(--secondary-color) 53%,
+    var(--primary-bg-color) 53%,
+    var(--primary-bg-color) 100%
+  );
+  --secondary-bottom-border: linear-gradient(
+    to right,
+    var(--primary-bg-color) 0%,
+    var(--primary-bg-color) 47%,
+    var(--primary-color) 47%,
+    var(--primary-color) 53%,
+    var(--primary-bg-color) 53%,
+    var(--primary-bg-color) 100%
+  );
+  --image-border: 2px white solid;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
 }
-
 h1 {
-  font-weight: 800;
-  font-size: 72px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: normal;
+  font-size: 60px;
 }
+
+h1.hero {
+  font-size: 72px;
+  font-weight: 800;
+}
+
 h2 {
   font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--primary-color);
+}
+.page-headings {
+  border-bottom: 2px solid;
+  border-image: var(--primary-bottom-border);
+  border-image-slice: 1;
+}
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+p {
+  font-size: 18px;
   font-weight: 300;
   color: var(--primary-color);
 }
@@ -24,12 +64,30 @@ h2 {
 .active {
   color: var(--secondary-color) !important;
 }
-.hero {
+.hero-container {
   background-color: var(--hero-bg-color);
   padding-bottom: 5%;
 }
 .homepage {
   background-color: var(--primary-bg-color);
+  padding: 30px 0;
+}
+.image-container {
+  background-color: var(--content-box-color);
+  border: var(--image-border);
+  aspect-ratio: 1/1;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+}
+.home-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.project-link {
+  background-color: var(--secondary-color) !important;
+  width: 33%;
 }
 
 #hero-item-container {
@@ -40,12 +98,28 @@ h2 {
 #hero-item {
   flex-direction: column;
 }
-#first-name {
-  color: var(--primary-color);
+#last-name {
+  color: var(--secondary-color);
 }
 #hero-image {
   width: 40%;
 }
 #hero-button {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h1.hero {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
 }

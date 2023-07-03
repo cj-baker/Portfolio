@@ -32,7 +32,7 @@
     <title>Casey Baker | Front-End Developer based in Vancouver, WA</title>
   </head>
   <body>
-    <div class="hero">
+    <div class="hero-container">
       <nav
         class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark"
         data-bs-theme="dark"
@@ -80,7 +80,10 @@
         </div>
       </nav>
 
-      <div class="container-fluid d-block d-lg-flex" id="hero-item-container">
+      <div
+        class="container-fluid d-block d-lg-flex g-3"
+        id="hero-item-container"
+      >
         <img
           src="images/developer.png"
           alt="computer and mobile application"
@@ -92,8 +95,8 @@
           class="d-flex mx-auto my-auto text-center text-lg-start"
           id="hero-item"
         >
-          <h1 class="text-wrap text-lg-nowrap">
-            <span id="first-name"> Casey</span> Baker
+          <h1 class="hero text-wrap text-lg-nowrap mt-3 mt-lg-0">
+            Casey <span id="last-name">Baker</span>
           </h1>
           <h2 class="text-wrap text-lg-nowrap">
             I am a Front-End Developer based in Vancouver, WA
@@ -113,20 +116,25 @@
       </div>
     </div>
     <div class="homepage" id="homepage">
-      <h1>Recent Projects</h1>
+      <h1 class="text-center mb-5 pt-5 page-headings">Recent Projects</h1>
+
       <div class="container-md container-fluid text-center text-md-left">
         <div class="row">
-          <div class="col-fluid-6 col-md-6">
+          <div
+            class="col-fluid-6 col-md-6 image-container rounded-3 d-none d-md-block"
+          >
             <img
               src="/images/archery.png"
               alt="Screenshot of Archery webpage"
               title="Screenshot of Archery webpage"
-              class="img-fluid rounded d-none d-md-block d-none d-md-block"
+              class="home-image img-fluid"
             />
           </div>
-          <div class="col-fluid-6 col-md-6">
-            <h2 class="mb-3">Archery Page</h2>
-            <p>
+          <div
+            class="col-fluid-6 col-md-6 mx-auto my-auto text-center text-md-start g-5"
+          >
+            <h3 class="mb-3">Archery Page</h3>
+            <p class="home-paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis quia, dignissimos nam ratione veniam quibusdam porro
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
@@ -135,7 +143,7 @@
             <div class="mt-5">
               <a
                 href="#"
-                class="primary-link project-link"
+                class="btn btn-success project-link shadow"
                 title="Learn more about the History of Archery"
                 >Launch Webpage</a
               >
@@ -143,9 +151,11 @@
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col-fluid-6 col-md-6">
-            <h2 class="mb-3">Weather App</h2>
-            <p>
+          <div
+            class="col-fluid-6 col-md-6 mx-auto my-auto text-center text-md-end g-5"
+          >
+            <h3 class="mb-3">Weather App</h3>
+            <p class="home-paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis quia, dignissimos nam ratione veniam quibusdam porro
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
@@ -154,33 +164,39 @@
             <div class="mt-5 mb-5 mb-md-0">
               <a
                 href="https://weatherapplicationproject.netlify.app"
-                class="primary-link project-link"
+                class="btn btn-success project-link shadow"
                 title="Launch the Weather App"
                 >Launch Weather App</a
               >
             </div>
           </div>
-          <div class="col-fluid-6 col-md-6">
+          <div
+            class="col-fluid-6 col-md-6 image-container rounded-3 d-none d-md-block"
+          >
             <img
               src="/images/weather.png"
               alt="Screenshot of Weather App"
               title="Screenshot of Weather App"
-              class="img-fluid rounded d-none d-md-block"
+              class="home-image img-fluid"
             />
           </div>
         </div>
         <div class="row mt-5 mb-5">
-          <div class="col-fluid-6 col-md-6">
+          <div
+            class="col-fluid-6 col-md-6 image-container rounded-3 d-none d-md-block"
+          >
             <img
               src="/images/worldclock.png"
               alt="Screenshot of World Clock App"
               title="Screenshot of World Clock App"
-              class="img-fluid rounded d-none d-md-block"
+              class="home-image img-fluid"
             />
           </div>
-          <div class="col-fluid-6 col-md-6">
-            <h2 class="mb-3">World Clock</h2>
-            <p>
+          <div
+            class="col-fluid-6 col-md-6 mx-auto my-auto text-center text-md-start g-5"
+          >
+            <h3 class="mb-3">World Clock</h3>
+            <p class="home-paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis quia, dignissimos nam ratione veniam quibusdam porro
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
@@ -189,7 +205,7 @@
             <div class="mt-5 mb-5 mb-md-0">
               <a
                 href="https://worldclock-js-project.netlify.app"
-                class="primary-link project-link"
+                class="btn btn-success project-link shadow"
                 title="Try out my world clock app!"
                 >Launch App</a
               >
