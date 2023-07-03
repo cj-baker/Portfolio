@@ -38,7 +38,7 @@
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand ms-3" href="#" id="nav-icon">CB</a>
+          <a class="navbar-brand ms-3" href="/" id="nav-icon">CB</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -60,19 +60,19 @@
                   <a
                     class="nav-link text-light active"
                     aria-current="page"
-                    href="#"
+                    href="/"
                     id="home-link"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">About</a>
+                  <a class="nav-link text-light" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Work</a>
+                  <a class="nav-link text-light" href="/work">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Contact</a>
+                  <a class="nav-link text-light" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -118,7 +118,7 @@
     <div class="homepage" id="homepage">
       <h1 class="text-center mb-5 pt-5 page-headings">Recent Projects</h1>
 
-      <div class="container-md container-fluid text-center text-md-left">
+      <div class="container container-fluid text-center text-md-left">
         <div class="row">
           <div
             class="col-fluid-6 col-md-6 image-container rounded-3 d-none d-md-block"
@@ -134,7 +134,7 @@
             class="col-fluid-6 col-md-6 mx-auto my-auto text-center text-md-start g-5"
           >
             <h3 class="mb-3">Archery Page</h3>
-            <p class="home-paragraph">
+            <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis quia, dignissimos nam ratione veniam quibusdam porro
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
@@ -145,6 +145,7 @@
                 href="#"
                 class="btn btn-success project-link shadow"
                 title="Learn more about the History of Archery"
+                target="_blank"
                 >Launch Webpage</a
               >
             </div>
@@ -155,7 +156,7 @@
             class="col-fluid-6 col-md-6 mx-auto my-auto text-center text-md-end g-5"
           >
             <h3 class="mb-3">Weather App</h3>
-            <p class="home-paragraph">
+            <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis quia, dignissimos nam ratione veniam quibusdam porro
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
@@ -166,7 +167,8 @@
                 href="https://weatherapplicationproject.netlify.app"
                 class="btn btn-success project-link shadow"
                 title="Launch the Weather App"
-                >Launch Weather App</a
+                target="_blank"
+                >Launch App</a
               >
             </div>
           </div>
@@ -196,7 +198,7 @@
             class="col-fluid-6 col-md-6 mx-auto my-auto text-center text-md-start g-5"
           >
             <h3 class="mb-3">World Clock</h3>
-            <p class="home-paragraph">
+            <p class="project-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis quia, dignissimos nam ratione veniam quibusdam porro
               omnis quam vel eos eveniet alias temporibus deserunt veritatis
@@ -207,11 +209,35 @@
                 href="https://worldclock-js-project.netlify.app"
                 class="btn btn-success project-link shadow"
                 title="Try out my world clock app!"
+                target="_blank"
                 >Launch App</a
               >
             </div>
           </div>
         </div>
+      </div>
+      <div
+        class="container-fluid d-block d-lg-flex justify-content-evenly align-items-center rounded contact-container"
+      >
+        <h2 id="contact">Start a Project</h2>
+        <p class="mx-auto my-auto">
+          Interested in collaborating? Have a development request? Let's
+          connect!
+        </p>
+        <a href="/contact" class="btn btn-primary px-4 contact-link shadow"
+          ><i class="fa-regular fa-comments" style="color: #ffffff"></i
+        ></a>
+      </div>
+      <div class="social-container d-flex justify-content-center">
+        <a href="https://github.com/cj-baker" target="_blank"
+          ><i class="fa-brands fa-github" style="color: #01aaaa"></i
+        ></a>
+        <a href="https://linkedin.com/in/cj-baker93" target="_blank"
+          ><i class="fa-brands fa-linkedin mx-4" style="color: #01aaaa"></i
+        ></a>
+        <a href="mailto:cj-baker@live.com"
+          ><i class="fa-regular fa-envelope" style="color: #01aaaa"></i>
+        </a>
       </div>
     </div>
   </body>
