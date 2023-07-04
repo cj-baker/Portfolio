@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archery</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(180deg, #13547a 0%, #80d0c7 100%);
+      text-align: center;
+      padding: 20px;
+      margin: 10px auto;
+    }
+    h1 {
+      font-size: 60px;
+      margin: 0 auto;
+      text-shadow: 10px 2px 5px #a58d5d;
+    }
+    .dark h1 {
+      text-shadow: 10px 2px 5px #224044;
+    }
+    h2 {
+      font-size: 32px;
+      margin: 10px auto;
+      text-decoration: underline;
+    }
+    img {
+      margin: 0 auto;
+      width: 90%;
+      border: #625438;
+      border-style: double;
+      border-width: thick;
+      border-radius: 10px;
+      box-shadow: #625438 0px 3px 3px 0.3px;
+    }
+    hr {
+      margin: 20px auto;
+    }
+    p {
+      font-size: 24px;
+      text-align: left;
+    }
+    button {
+      display: block;
+      margin: 10px auto;
+      background-color: #185a7e;
+      border-radius: 10px;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+    .theme-button {
+      font-size: 12px;
+      line-height: 30px;
+      color: #73b1c1;
+      border-color: #20393e;
+      transition: 150ms ease;
+    }
+    .theme-button:hover {
+      background-color: #20393e;
+      color: #588d9c;
+    }
+    .container {
+      width: 800px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      background: #f1d18a;
+      color: #185a7e;
+      margin: 0 auto;
+      padding: 30px;
+      box-shadow: #588d9c 0px 5px 5px 0.5px;
+      border-radius: 20px;
+      border-style: double;
+      border-color: #625438;
+      border-width: thick;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 188px);
+      grid-gap: 16px;
+    }
+    .image-grid img {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 3/2;
+      transition: all 200ms ease-in-out;
+    }
+    .image-grid img:hover {
+      transform: scale(2);
+      filter: grayscale(100%);
+    }
+    .target {
+      margin: 10px auto;
+      width: 100%;
+      transition: all 150ms ease-in-out;
+    }
+    .target:hover {
+      filter: grayscale(100%);
+      transform: scale(1.2);
+    }
+    .info {
+      color: #13547a;
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 150ms ease;
+    }
+    .info:hover {
+      color: #67583a;
+    }
+    .learn-button {
+      font-size: 20px;
+      font-weight: 600;
+      color: #73b1c1;
+      padding: 10px;
+      margin: 10px auto;
+      line-height: 30px;
+      border-radius: 6px;
+      border-color: #20393e;
+      box-shadow: #67583a 0px 3px 3px 0.3px;
+      transition: 150ms ease;
+    }
+
+    .learn-button:hover {
+      background-color: #588d9c;
+      color: #36626a;
+    }
+    footer {
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+      color: #185a7e;
+      font-weight: 600;
+    }
+    a {
+      color: #f1d18a;
+      text-decoration: none;
+      transition: all 150ms ease;
+    }
+    a:hover {
+      color: #67583a;
+    }
+    .dark {
+      background: linear-gradient(360deg, #567d81 0%, #273739 100%);
+    }
+    .dark .container {
+      background: #2e585e;
+      color: #798f14;
+      border-color: #192324;
+      box-shadow: #192324 0px 5px 5px 0.5px;
+    }
+    .dark a {
+      color: #a2c11c;
+    }
+    .dark a:hover {
+      color: #20393e;
+    }
+    .dark footer {
+      color: #e0e0e0;
+    }
+    .dark .learn-button {
+      background-color: #20393e;
+      border-color: #20393e;
+      box-shadow: #20393e 0px 3px 3px 0.3px;
+    }
+    .dark .theme-button {
+      background-color: #20393e;
+      border-color: #20393e;
+      box-shadow: #20393e 0px 3px 3px 0.3px;
+    }
+    .dark img {
+      background-color: #20393e;
+      border-color: #20393e;
+      box-shadow: #20393e 0px 3px 3px 0.3px;
+    }
+    .dark .info:hover {
+      color: #20393e;
+    }
+  </style>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Archery</h1>
+      <h2>Practicing with a Recurve Bow</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/443/original/target.jpg?1679692329"
+        alt="target"
+        class="target"
+      />
+      <div class="image-grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/445/original/archers.jpg?1679692423"
+          alt="archers"
+          class="archers"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/444/original/archer.jpg?1679692333"
+          alt="single-archer"
+          class="single-archer"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/441/original/istockphoto-1216116462-612x612.jpg?1679692220"
+          alt="archer-hands"
+          class="archer-hands"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/442/original/istockphoto-1292923700-612x612.jpg?1679692235"
+          alt="arrows"
+          class="arrows"
+        />
+      </div>
+      <hr />
+      <p>
+        The recurve bow is the modern evolution of traditional bows that have
+        existed for 1000s of years. The limbs positioned at the top and bottom
+        of the bow curve back away from the archer at each tip. This is what
+        gives the ‘re-curve’ its name. 📚
+        <a
+          class="info"
+          href="https://www.worldarchery.sport/sport/equipment/recurve#:~:text=The%20recurve%20bow%20is%20the,re%2Dcurve'%20its%20name."
+          target="blan
+      "
+          >Read More</a
+        >
+      </p>
+
+      <button class="learn-button">Learn Archery</button>
+    </div>
+    <footer>
+      Coded by
+      <a
+        href="https://www.shecodes.io/graduates/76953-casey-baker"
+        target="_blank"
+        >Casey Baker</a
+      >
+    </footer>
+  </body>
+  <script>
+    function changeTheme() {
+      let body = document.querySelector("body");
+      if (body.classList.contains("dark")) {
+        body.classList.remove("dark");
+      } else {
+        body.classList.add("dark");
+      }
+    }
+    function learnMore() {
+      window.open(
+        "https://www.google.com/search?q=archery+lessons+near+me&oq=archery+lessons&aqs=chrome.0.0i457i512j69i57j46i175i199i402i512j0i402i512j0i512l2j46i175i199i512j0i512l3.5049j0j4&sourceid=chrome&ie=UTF-8"
+      );
+    }
+
+    let themeButton = document.querySelector(".theme-button");
+    themeButton.addEventListener("click", changeTheme);
+
+    let learnButton = document.querySelector(".learn-button");
+    learnButton.addEventListener("click", learnMore);
+  </script>
+</html>
