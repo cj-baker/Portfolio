@@ -30,7 +30,7 @@ body {
 }
 h1 {
   color: var(--primary-color);
-  font-weight: normal;
+  font-weight: 800;
   font-size: 60px;
 }
 
@@ -52,7 +52,7 @@ h2 {
 }
 h3 {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: normal;
   color: var(--secondary-color);
 }
 p {
@@ -88,6 +88,11 @@ p {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  filter: grayscale(1);
+}
+.home-image:hover {
+  filter: grayscale(0);
+  transition: all 300ms ease-in-out;
 }
 .project-link {
   background-color: var(--secondary-color) !important;
@@ -143,5 +148,10 @@ p {
 
   h3 {
     font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-blurb {
+    padding-bottom: 20px;
   }
 }
