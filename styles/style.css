@@ -58,6 +58,7 @@ p {
   line-height: 1.5;
   color: var(--primary-color);
 }
+
 small.code-icon {
   color: var(--primary-color);
   border: var(--image-border);
@@ -148,11 +149,11 @@ small.code-icon {
   margin: 0 auto;
 }
 
-#contact-link {
-  background-color: var(--primary-bg-color);
+.contact-link {
+  background-color: var(--content-box-color);
   border-color: var(--primary-color);
 }
-#contact-link:hover {
+.contact-link:hover {
   background-color: var(--secondary-color);
   border-color: var(--primary-color);
 }
