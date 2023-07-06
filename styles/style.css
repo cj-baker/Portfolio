@@ -70,8 +70,15 @@ small.code-icon {
   border-image-slice: 1;
 }
 .social-link {
-  padding: 20px 0;
+  margin: 60px auto;
+  padding: 20px 20px;
   font-size: 30px;
+  background-color: var(--content-box-color);
+  border-radius: 360px;
+}
+.contact-icon {
+  padding: 10px 0;
+  font-size: 24px;
 }
 
 .active {
