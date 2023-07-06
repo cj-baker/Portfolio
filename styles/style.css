@@ -165,7 +165,7 @@ small.code-icon {
 }
 
 #hero-item-container {
-  padding-top: 20%;
+  padding-top: 15%;
   padding-bottom: 10%;
 }
 
@@ -208,6 +208,9 @@ small.code-icon {
   }
   .contact-paragraph {
     width: 100%;
+  }
+  #hero-item-container {
+    padding-top: 20%;
   }
 }
 @media (max-width: 992px) {
