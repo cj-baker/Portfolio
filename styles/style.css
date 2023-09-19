@@ -132,7 +132,7 @@ small.code-icon {
 .project-image-wrap {
   position: relative;
   width: 500;
-  height: 250;
+  height: 200;
 }
 .image-link {
   position: absolute;
@@ -144,7 +144,7 @@ small.code-icon {
   color: var(--primary-color);
   font-size: 46px;
   visibility: hidden;
-  padding-top: 20%;
+  padding-top: 10%;
   opacity: 0;
 }
 .project-image-wrap:hover .image-link {
@@ -154,7 +154,7 @@ small.code-icon {
 }
 .project-images {
   width: 500px;
-  height: 250px;
+  height: 200px;
   object-fit: scale-down;
   background-color: var(--primary-bg-color);
   margin: 0 auto;
@@ -235,6 +235,15 @@ small.code-icon {
   .contact-paragraph {
     width: 100%;
   }
+  .project-images {
+    width: 500px;
+    height: 150px;
+  }
+  .project-image-wrap {
+    width: 500;
+    height: 150;
+  }
+
   #hero-item-container {
     padding-top: 20%;
   }
@@ -246,5 +255,9 @@ small.code-icon {
   .home-image {
     width: 400px;
     height: 300px;
+  }
+  .project-images {
+    width: 500px;
+    height: 150px;
   }
 }
