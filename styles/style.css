@@ -134,7 +134,6 @@ small.code-icon {
 .button-link:hover {
   background-color: var(--content-box-color) !important;
   border-color: var(--primary-color) !important;
-  position: fixed;
   z-index: 1;
 }
 .content-container {
