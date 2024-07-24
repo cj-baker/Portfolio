@@ -32,7 +32,6 @@ body {
 .hero-particles-body {
   position: relative;
   display: flex;
-  
 }
 
 #tsparticles {
@@ -130,10 +129,13 @@ small.code-icon {
   background-color: var(--secondary-color) !important;
   border-color: var(--primary-color);
   width: max-content;
+  z-index: 1;
 }
 .button-link:hover {
   background-color: var(--content-box-color) !important;
   border-color: var(--primary-color) !important;
+  position: fixed;
+  z-index: 1;
 }
 .content-container {
   background-color: var(--content-box-color);
@@ -209,6 +211,8 @@ small.code-icon {
 #hero-item-container {
   padding-top: 15%;
   padding-bottom: 10%;
+  position: relative;
+  z-index: 10;
 }
 
 #hero-item {

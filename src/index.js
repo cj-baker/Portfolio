@@ -15,6 +15,7 @@ function mobile(){
             tsParticles.load("tsparticles", {
                 fullScreen: {
                   enable: false,
+                  zIndex: -10,
                 },
                 fpsLimit: 60,
                 particles: {
@@ -73,6 +74,7 @@ function tablet(){
             tsParticles.load("tsparticles", {
                 fullScreen: {
                   enable: false,
+                  zIndex: -10,
                 },
                 fpsLimit: 60,
                 particles: {
