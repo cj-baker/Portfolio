@@ -231,7 +231,7 @@ small.code-icon {
   z-index: 1;
 }
 #about-image {
-  width: 30%;
+  width: 300px;
   border-radius: 180px;
   border: var(--image-border);
   filter: grayscale(1);
@@ -293,5 +293,11 @@ small.code-icon {
     width: 40%;
     z-index: 1;
     position: relative;
+  }
+  #about-image {
+    width: 200px;
+    border-radius: 180px;
+    border: var(--image-border);
+    filter: grayscale(1);
   }
 }
